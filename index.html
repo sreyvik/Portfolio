@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roeurn Rors</title>
+    <title>ROEURN RORS</title>
     <meta
       name="description"
       content="Portfolio of Roeurn Rors, a passionate Web Developer and student at Passerelles Numériques Cambodia."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236366f1'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='Arial,sans-serif' font-weight='bold'>R</text></svg>"
     />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Serif+Khmer:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -23,6 +29,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- Flag Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css"
+    />
+
     <!-- Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -30,9 +42,64 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/css/styles.css" />
+    <link rel="stylesheet" href="static/css/styles.css?v=4" />
   </head>
   <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <span class="loader-text">ROEURN</span>
+        <span class="loader-accent"> RORS</span>
+        <span class="loader-dot">.</span>
+      </div>
+      <div class="loader-sub">&lt; web developer &gt;</div>
+
+      <!-- Floating Tech Badges -->
+      <div class="tech-badge html-badge">HTML5</div>
+      <div class="tech-badge css-badge">CSS3</div>
+      <div class="tech-badge js-badge">JavaScript</div>
+      <div class="tech-badge vue-badge">Vue.js</div>
+      <div class="tech-badge node-badge">Node.js</div>
+      <div class="tech-badge express-badge">Express</div>
+      <div class="tech-badge mysql-badge">MySQL</div>
+      <div class="tech-badge typescript-badge">TypeScript</div>
+      <div class="tech-badge laravel-badge">Laravel</div>
+      <div class="tech-badge python-badge">Python</div>
+
+      <!-- Terminal Code Preview -->
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">portfolio -- bash</span>
+        </div>
+        <div class="terminal-body">
+          <div class="code-line line-html"><span class="code-tag">&lt;!DOCTYPE html&gt;</span></div>
+          <div class="code-line line-html"><span class="code-tag">&lt;html lang="en"&gt;</span></div>
+          <div class="code-line line-html"><span class="code-tag">&lt;head&gt;</span></div>
+          <div class="code-line line-html"><span class="code-indent"></span><span class="code-tag">&lt;title&gt;</span>Roeurn Rors<span class="code-tag">&lt;/title&gt;</span></div>
+          <div class="code-line line-css"><span class="code-indent"></span><span class="code-tag">&lt;link</span> <span class="code-attr">rel</span>=<span class="code-string">"stylesheet"</span> <span class="code-attr">href</span>=<span class="code-string">"style.css"</span> <span class="code-tag">/&gt;</span></div>
+          <div class="code-line line-html"><span class="code-tag">&lt;/head&gt;</span></div>
+          <div class="code-line line-html"><span class="code-tag">&lt;body&gt;</span></div>
+          <div class="code-line line-js"><span class="code-indent"></span><span class="code-comment">// Building something awesome</span></div>
+          <div class="code-line line-js"><span class="code-indent"></span><span class="code-keyword">const</span> skills = [<span class="code-string">'Frontend'</span>, <span class="code-string">'Backend'</span>, <span class="code-string">'UI/UX'</span>];</div>
+          <div class="code-line line-js"><span class="code-indent"></span>skills.<span class="code-fn">forEach</span>(<span class="code-arrow">=&gt;</span> <span class="code-fn">build</span>());</div>
+          <div class="code-line cursor-line"><span class="code-indent"></span><span class="code-prompt">$</span> <span class="cursor-blink">|</span></div>
+        </div>
+      </div>
+
+      <div class="tech-grid"></div>
+      <div class="glow-line glow-line-1"></div>
+      <div class="glow-line glow-line-2"></div>
+    </div>
+
+    <!-- Interactive Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container nav-container">
@@ -46,15 +113,21 @@
           <span class="bar"></span>
         </div>
         <ul class="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#home" class="nav-link" data-i18n="nav-home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav-about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav-education">Education</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
           <li>
             <button id="theme-toggle" class="theme-btn">
               <i class="fas fa-moon"></i>
+            </button>
+          </li>
+          <li>
+            <button id="lang-toggle" class="lang-btn" title="Toggle Language">
+              <span class="fi fi-gb fis lang-en active"></span>
+              <span class="fi fi-kh fis lang-kh"></span>
             </button>
           </li>
           <span class="slide-line" aria-hidden="true"></span>
@@ -66,18 +139,18 @@
     <section id="home" class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <span class="greeting">Hello, I'm</span>
+          <span class="greeting" data-i18n="hero-greeting">Hello, I'm</span>
           <h1 class="hero-name">ROEURN RORS</h1>
-          <h2 class="hero-tagline">I'm a <span class="typing-text"></span></h2>
-          <p class="hero-bio">
+          <h2 class="hero-tagline"><span data-i18n="hero-iam">I'm a</span> <span class="typing-text"></span></h2>
+          <p class="hero-bio" data-i18n="hero-bio">
             A creative Full Stack Developer based in Phnom Penh, specializing in
             building responsive, user-centric web applications with modern
             technologies.
           </p>
           <div class="hero-btns">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#projects" class="btn btn-primary" data-i18n="hero-btn-work">View My Work</a>
             <a href="static/docs/ROEURN_RORS_CV.pdf" class="btn btn-outline" target="_blank">
-              <i class="fas fa-download"></i> Download CV
+              <i class="fas fa-download"></i> <span data-i18n="hero-btn-cv">Download CV</span>
             </a>
           </div>
           <div class="social-links">
@@ -121,56 +194,32 @@
       <div class="container">
         <div class="about-content fade-in">
           <div class="about-text">
-            <h2 class="section-subtitle">About Me</h2>
-            <p>
-              I'm a dedicated and passionate student web developer currently
-              honing my craft at
-              <strong>Passerelles Numériques Cambodia</strong>. My education is
-              a blend of rigorous technical training and essential professional
-              development, preparing me for real-world challenges in the tech
-              industry.
+            <h2 class="section-subtitle" data-i18n="about-title">About Me</h2>
+            <p data-i18n="about-p1">
+              I'm a Web Developer who enjoys turning ideas into practical,
+              user-friendly, and reliable web applications. I'm currently
+              completing my Web Development program at
+              Passerelles Numériques Cambodia, where I've gained hands-on
+              experience through projects, teamwork, and practical training.
             </p>
-            <p>
-              Through hands-on projects and collaborative learning, I've
-              developed a strong foundation in both front-end and back-end
-              technologies. I believe in writing clean, efficient code and
-              creating intuitive user experiences.
+            <p data-i18n="about-p2">
+              I have experience in both frontend and backend development, using
+              Vue.js, TypeScript, JavaScript, PHP, Laravel, Node.js, MySQL, and
+              RESTful APIs. I enjoy building responsive interfaces, developing
+              backend systems, designing databases, and solving technical
+              problems.
             </p>
-            <p>
-              I'm actively seeking
-              <strong
-                >internship opportunities or junior developer roles</strong
-              >
-              where I can contribute my skills, learn from experienced
-              professionals, and grow as a developer within a collaborative team
-              environment.
+            <p data-i18n="about-p3">
+              Through my projects, I've also gained experience with Git/GitHub
+              and Agile/Scrum while working with teammates to build practical
+              solutions. I'm currently looking for an internship or junior
+              developer opportunity where I can contribute to real-world
+              projects, learn from experienced developers, and continue growing
+              as a software developer.
             </p>
             <a href="#contact" class="btn btn-primary" style="margin-top: 20px">
-              <i class="fas fa-handshake"></i> Let's Collaborate
+              <i class="fas fa-handshake"></i> <span data-i18n="about-btn">Let's Collaborate</span>
             </a>
-          </div>
-          <div class="education-info fade-in">
-            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-            <p><strong>Passerelles Numériques Cambodia</strong></p>
-            <p>Web Development Program (2025 - Present)</p>
-            <p>
-              Comprehensive training in modern web technologies, software
-              development methodologies, and professional skills development.
-            </p>
-            <a
-              href="https://www.passerellesnumeriques.org/what-we-do/cambodia/"
-              target="_blank"
-            >
-              <i class="fas fa-external-link-alt"></i> Visit PNC Website
-            </a>
-
-            <h3><i class="fas fa-bullseye"></i> My Approach</h3>
-            <p>
-              I focus on creating scalable solutions with clean architecture. I
-              enjoy problem-solving, continuously learning new technologies, and
-              staying current with industry best practices to deliver
-              high-quality applications.
-            </p>
           </div>
         </div>
       </div>
@@ -179,11 +228,11 @@
     <!-- Skills Section -->
     <section id="skills" class="section skills">
       <div class="container">
-        <h2 class="section-subtitle">My Skills</h2>
+        <h2 class="section-subtitle" data-i18n="skills-title">My Skills</h2>
         <div class="skills-grid">
           <!-- Technical Skills -->
           <div class="skill-category">
-            <h3><i class="fas fa-code"></i> Technical Skills</h3>
+            <h3><i class="fas fa-code"></i> <span data-i18n="skills-technical">Technical Skills</span></h3>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
               <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
@@ -196,6 +245,9 @@
               >
                   <span class="skill-tag"
                 ><i class="fab fa-react"></i> React.js</span
+              >
+              <span class="skill-tag"
+                ><i class="fab fa-vuejs"></i> Vue.js</span
               >
               <span class="skill-tag"
                 ><i class="fab fa-node-js"></i> Node.js</span
@@ -230,9 +282,11 @@
 
           <!-- Tools & Platforms -->
           <div class="skill-category">
-            <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+            <h3><i class="fas fa-tools"></i> <span data-i18n="skills-tools">Tools &amp; Platforms</span></h3>
             <div class="skill-tags">
               <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
+              <span class="skill-tag"><i class="fab fa-wordpress"></i> WordPress</span>
+              <span class="skill-tag"><i class="fas fa-palette"></i> Canva</span>
               <span class="skill-tag"><i class="fas fa-server"></i> XAMPP</span>
               <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
               <span class="skill-tag"><i class="fab fa-jira"></i> Jira</span>
@@ -270,7 +324,7 @@
 
           <!-- Professional Skills -->
           <div class="skill-category">
-            <h3><i class="fas fa-users"></i> Professional Skills</h3>
+            <h3><i class="fas fa-users"></i> <span data-i18n="skills-professional">Professional Skills</span></h3>
             <div class="skill-tags">
               <span class="skill-tag"
                 ><i class="fas fa-users"></i> Teamwork</span
@@ -285,14 +339,16 @@
                 ><i class="fas fa-lightbulb"></i> Problem Solving</span
               >
               <span class="skill-tag"
-                ><i class="fas fa-comments"></i> Critical Thinking</span
+                ><i class="fas fa-brain"></i> Critical Thinking</span
               >
               <span class="skill-tag"
-                ><i class="fas fa-comments"></i> Communication</span
+                ><i class="fas fa-comment-dots"></i> Communication</span
               >
               <span class="skill-tag"
                 ><i class="fas fa-tasks"></i> Task Management</span
               >
+              <span class="skill-tag"
+                ><i class="fas fa-clock"></i> Time Management</span
             </div>
           </div>
         </div>
@@ -302,17 +358,68 @@
     <!-- Projects Section -->
     <section id="projects" class="section projects">
       <div class="container">
-        <h2 class="section-subtitle">My Projects</h2>
+        <h2 class="section-subtitle" data-i18n="projects-title">My Projects</h2>
+        
+        <!-- Project Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
+          <button class="filter-btn" data-filter="fullstack" data-i18n="filter-fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="frontend" data-i18n="filter-frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend" data-i18n="filter-backend">Backend</button>
+          <button class="filter-btn" data-filter="ui-ux" data-i18n="filter-uiux">UI/UX Design</button>
+        </div>
+
         <div class="projects-grid">
           <!-- Project 1 -->
-          <div class="project-card">
+          <div class="project-card" data-category="fullstack">
+            <img
+              src="static/images/studentscoremanagementsystem.jpg"
+              alt="Student Score Management System"
+            />
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="proj1-title">Student Score Management System</h3>
+              <p class="project-desc" data-i18n="proj1-desc">
+                A web application for managing student scores that allows teachers to input grades, view reports, and track student performance.
+              </p>
+              <div class="project-tech">
+                <span>Laravel</span>
+                <span>Vue.js</span>
+                <span>TypeScript</span>
+                <span>MySQL</span>
+                <span>Bootstrap 5</span>
+                <span>REST API</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/G6-PNC-STUDEND-SCORE/G6-PNC-STUDEND-SCORE-BACK.git"
+                  target="_blank"
+                  class="btn-sm"
+                  ><i class="fab fa-github"></i> Back</a
+                >
+                <a
+                  href="https://github.com/G6-PNC-STUDEND-SCORE/G6-PNC-STUDEND-SCORE-FRONT.git"
+                  target="_blank"
+                  class="btn-sm"
+                  ><i class="fab fa-github"></i> Front</a
+                >
+                <a
+                  href="https://pnc-studentscoremanagement.vercel.app/"
+                  target="_blank"
+                  class="btn-sm btn-accent"
+                  ><i class="fas fa-external-link-alt"></i> Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card" data-category="fullstack">
             <img
               src="static/images/football-field-booking.png"
               alt="Football Field Booking System"
             />
             <div class="project-content">
-              <h3 class="project-title">Football Field Booking System</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj2-title">Football Field Booking System</h3>
+              <p class="project-desc" data-i18n="proj2-desc">
                 A web application for booking football fields that allows users to view available slots, make reservations, and track their bookings.
               </p>
               <div class="project-tech">
@@ -321,7 +428,6 @@
                 <span>Express 5</span>
                 <span>MySQL</span>
                 <span>Tailwind CSS</span>
-                <span>JWT</span>
                 <span>REST API</span>
               </div>
               <div class="project-links">
@@ -340,15 +446,15 @@
               </div>
             </div>
           </div>
-          <!-- Project 2 -->
-          <div class="project-card">
+          <!-- Project 3 -->
+          <div class="project-card" data-category="backend">
             <img
               src="static/images/e-commerce-python.png"
               alt="E-commerce Backend"
             />
             <div class="project-content">
-              <h3 class="project-title">E-commerce Electronics</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj3-title">E-commerce Electronics</h3>
+              <p class="project-desc" data-i18n="proj3-desc">
                 A fully functional backend system for an e-commerce platform
                 including product management, authentication, shopping cart, and
                 order processing.
@@ -372,15 +478,15 @@
             </div>
           </div>
 
-          <!-- Project 3 -->
-          <div class="project-card">
+          <!-- Project 4 -->
+          <div class="project-card" data-category="frontend">
             <img
               src="static/images/transport-car.png"
               alt="Transportation Web App"
             />
             <div class="project-content">
-              <h3 class="project-title">Transportation Web App</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj4-title">Transportation Web App</h3>
+              <p class="project-desc" data-i18n="proj4-desc">
                 A transportation website that allows users to take cars and
                 admin can know the strategy to sell the car.
               </p>
@@ -388,7 +494,7 @@
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
-                <span>Local Storage</span>
+                <!-- <span>Local Storage</span> -->
               </div>
               <div class="project-links">
                 <a
@@ -407,15 +513,15 @@
             </div>
           </div>
 
-          <!-- Project 4 -->
-          <div class="project-card">
+          <!-- Project 5 -->
+          <div class="project-card" data-category="frontend">
             <img
               src="static/images/e-commerce-web.png"
               alt="E-commerce Website"
             />
             <div class="project-content">
-              <h3 class="project-title">Limessery Coffee</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj5-title">Limessery Coffee</h3>
+              <p class="project-desc" data-i18n="proj5-desc">
                 A responsive online coffee shop website with product catalog and
                 shopping cart functionality.
               </p>
@@ -440,14 +546,12 @@
               </div>
             </div>
           </div>
-
-         
-          <!-- Project 5 -->
-          <div class="project-card">
+          <!-- Project 6 -->
+          <div class="project-card" data-category="ui-ux">
             <img src="static/images/figma.png" alt="Leave Management System" />
             <div class="project-content">
-              <h3 class="project-title">Leave Management System</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj6-title">Leave Management System</h3>
+              <p class="project-desc" data-i18n="proj6-desc">
                 A leave management system that allows employees to request leave
                 and managers to approve or reject leave requests.
               </p>
@@ -466,12 +570,12 @@
             </div>
           </div>
 
-          <!-- Project 6 -->
-          <div class="project-card">
+          <!-- Project 7 -->
+          <div class="project-card" data-category="frontend">
             <img src="static/images/flower-shop.png" alt="Flower Shop" />
             <div class="project-content">
-              <h3 class="project-title">Flower Shop</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj7-title">Flower Shop</h3>
+              <p class="project-desc" data-i18n="proj7-desc">
                 A modern flower shop website featuring animations, product
                 showcase, and contact form.
               </p>
@@ -496,12 +600,12 @@
             </div>
           </div>
 
-          <!-- Project 7 -->
-          <div class="project-card">
+          <!-- Project 8 -->
+          <div class="project-card" data-category="frontend">
             <img src="static/images/qr-code.png" alt="QR Code Generator" />
             <div class="project-content">
-              <h3 class="project-title">QR Code Generator</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj8-title">QR Code Generator</h3>
+              <p class="project-desc" data-i18n="proj8-desc">
                 A tool that generates downloadable QR codes from text or URLs
                 with real-time preview.
               </p>
@@ -528,12 +632,12 @@
             </div>
           </div>
 
-          <!-- Project 8 -->
-          <div class="project-card">
+          <!-- Project 9 -->
+          <div class="project-card" data-category="frontend">
             <img src="static/images/quiz.png" alt="Quiz App" />
             <div class="project-content">
-              <h3 class="project-title">Quiz Web App</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj9-title">Quiz Web App</h3>
+              <p class="project-desc" data-i18n="proj9-desc">
                 A quiz website that allows users to take quizzes and track their
                 progress.
               </p>
@@ -559,12 +663,12 @@
             </div>
           </div>
 
-           <!-- Project 9 -->
-          <div class="project-card">
+           <!-- Project 10 -->
+          <div class="project-card" data-category="frontend">
             <img src="static/images/dashboard.png" alt="Dashboard static" />
             <div class="project-content">
-              <h3 class="project-title">Dashboard static</h3>
-              <p class="project-desc">
+              <h3 class="project-title" data-i18n="proj10-title">Dashboard Static</h3>
+              <p class="project-desc" data-i18n="proj10-desc">
                 A dashboard static website that allows users to take quizzes and
                 track their progress.
               </p>
@@ -591,13 +695,13 @@
 
 
 
-          <!-- Project 10 -->
-          <div class="project-card">
+          <!-- Project 11 -->
+          <div class="project-card" data-category="frontend">
             <img src="static/images/perfume.png" alt="Perfume Website" />
             <div class="project-content">
-              <h3 class="project-title">Perfume Website</h3>
-              <p class="project-desc">
-                A perfume website that I practice for start begining to learn
+              <h3 class="project-title" data-i18n="proj11-title">Perfume Website</h3>
+              <p class="project-desc" data-i18n="proj11-desc">
+                A perfume website that I practice for starting to learn
                 HTML and CSS.
               </p>
               <div class="project-tech">
@@ -622,7 +726,7 @@
           </div>
         </div>
         <div class="projects-actions">
-          <button id="view-projects-btn" class="btn btn-outline" type="button">
+          <button id="view-projects-btn" class="btn btn-outline" type="button" data-i18n="btn-view-all">
             View All Projects
           </button>
         </div>
@@ -633,17 +737,17 @@
     <section id="experience" class="section experience">
       <div class="container">
         <h2 class="section-subtitle">
-          My <span style="color: var(--secondary-color)">Education</span>
+          <span data-i18n="edu-section-my">My</span> <span style="color: var(--secondary-color)" data-i18n="edu-section-word">Education</span>
         </h2>
         <div class="timeline">
           <!-- Item 1 -->
           <div class="timeline-item left">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">2025 - Present</div>
+            <div class="timeline-date" data-i18n="tl1-date">2025 - Present</div>
             <div class="timeline-content">
-              <h3>Student Associate Web Developer</h3>
-              <h4>Passerelles Numériques Cambodia (PNC)</h4>
-              <p>
+              <h3 data-i18n="tl1-title">Student Associate Web Developer</h3>
+              <h4><a href="https://www.passerellesnumeriques.org/what-we-do/cambodia/" target="_blank" style="color: inherit;">Passerelles Numériques Cambodia (PNC)</a></h4>
+              <p data-i18n="tl1-desc">
                 I am currently studying in a Web Development program at
                 Passerelles Numériques Cambodia, where I am gaining
                 comprehensive training in modern web technologies, software
@@ -655,11 +759,11 @@
           <!-- Item 2 -->
           <div class="timeline-item right">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">2022 - 2025</div>
+            <div class="timeline-date" data-i18n="tl2-date">2022 - 2025</div>
             <div class="timeline-content">
-              <h3>Diploma High School</h3>
+              <h3 data-i18n="tl2-title">Diploma High School</h3>
               <h4>Kantoe 2 High School</h4>
-              <p>
+              <p data-i18n="tl2-desc">
                 I completed my high school education at Kantoe 2 High School
                 (Grade 10–12) and successfully passed the Upper Secondary School
                 Examination (Baccalaureate) to continue my studies at
@@ -671,11 +775,11 @@
           <!-- Item 3 -->
           <div class="timeline-item left">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">2012 - 2021</div>
+            <div class="timeline-date" data-i18n="tl3-date">2012 - 2021</div>
             <div class="timeline-content">
-              <h3>Student – Primary School</h3>
+              <h3 data-i18n="tl3-title">Student – Primary School</h3>
               <h4>Bay Damram Primary School</h4>
-              <p>
+              <p data-i18n="tl3-desc">
                 I completed my primary and lower secondary education at Bay
                 Damram Primary School and passed the Lower Secondary School
                 Examination (Diploma) to continue to high school.
@@ -689,11 +793,11 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
       <div class="container">
-        <h2 class="section-subtitle">Get In Touch</h2>
+        <h2 class="section-subtitle" data-i18n="contact-title">Get In Touch</h2>
         <div class="contact-container">
           <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p>
+            <h3 data-i18n="contact-info-title">Contact Information</h3>
+            <p data-i18n="contact-info-desc">
               I'm currently looking for internship opportunities or junior
               developer roles. Feel free to reach out if you'd like to
               collaborate, discuss potential projects, or have any questions!
@@ -708,7 +812,7 @@
             </div>
             <div class="info-item">
               <i class="fas fa-map-marker-alt"></i>
-              <span>Street 371, phum Tropeang Chhuk, SangkatTek Thla, Khan Sen Sok, Phnom Penh</span>
+              <span data-i18n="contact-address">Street 371, phum Tropeang Chhuk, SangkatTek Thla, Khan Sen Sok, Phnom Penh</span>
             </div>
             <div class="social-links big">
               <a
@@ -730,30 +834,34 @@
             </div>
           </div>
 
-          <form class="contact-form">
+          <form action="https://formspree.io/f/meajggba" method="POST" class="contact-form">
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Your Name" required />
+              <label for="name" data-i18n="form-name">Name</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="form-name-ph" placeholder="Your Name" required />
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email" data-i18n="form-email">Email</label>
               <input
                 type="email"
                 id="email"
+                name="email"
+                data-i18n-placeholder="form-email-ph"
                 placeholder="Your Email"
                 required
               />
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
+              <label for="message" data-i18n="form-message">Message</label>
               <textarea
                 id="message"
+                name="message"
                 rows="5"
+                data-i18n-placeholder="form-msg-ph"
                 placeholder="Your Message"
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary" data-i18n="form-submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -767,8 +875,8 @@
             <i class="fas fa-code logo-icon"></i>
             Roeurn <span>Rors</span>
           </a>
-          <p style="max-width: 600px; margin: 0 auto">
-            Web Developer & Student at Passerelles Numériques Cambodia.
+          <p style="max-width: 600px; margin: 0 auto" data-i18n="footer-desc">
+            Web Developer &amp; Student at Passerelles Numériques Cambodia.
             Passionate about creating innovative web solutions.
           </p>
           <div class="social-links">
@@ -804,6 +912,13 @@
       </div>
     </footer>
 
-    <script src="static/js/script.js"></script>
+    <!-- Custom Cursor Elements -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-dot"></div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <script src="static/js/script.js?v=4"></script>
   </body>
 </html>
