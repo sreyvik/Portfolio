@@ -47,15 +47,35 @@ const PROJECTS_DATA = [
             kh: 'ប្រព័ន្ធជំនួយសហគមន៍ (Comnuoy System)'
         },
         desc: {
-            en: 'A full-stack community support & fundraising platform. Features campaign management, real-time donation tracking, interactive GPS material pickup with Leaflet maps, QR code verification, and secure Google OAuth & JWT authentication.',
-            kh: 'វេទិកាជំនួយសហគមន៍ និងការរៃអង្គាសប្រាក់ Full-stack។ រួមបញ្ចូលការគ្រប់គ្រងយុទ្ធនាការ ការតាមដានការបរិច្ចាគ ការកំណត់ទីតាំងទទួលសម្ភារៈតាមផែនទី Leaflet & GPS ការផ្ទៀងផ្ទាត់ QR code និងប្រព័ន្ធសុវត្ថិភាព Google OAuth & JWT។'
+            en: 'Virtual Company project (VC1). A full-stack community support & fundraising platform. Features campaign management, real-time donation tracking, interactive GPS material pickup with Leaflet maps, QR code verification, and secure Google OAuth & JWT authentication.',
+            kh: 'គម្រោង Virtual Company (VC1)។ វេទិកាជំនួយសហគមន៍ និងការរៃអង្គាសប្រាក់ Full-stack។ រួមបញ្ចូលការគ្រប់គ្រងយុទ្ធនាការ ការតាមដានការបរិច្ចាគ ការកំណត់ទីតាំងទទួលសម្ភារៈតាមផែនទី Leaflet & GPS ការផ្ទៀងផ្ទាត់ QR code និងប្រព័ន្ធសុវត្ថិភាព Google OAuth & JWT។'
         },
         image: 'static/images/comnuoy-system.jpg',
         tech: ['React', 'Vite', 'TailwindCSS', 'Leaflet', 'Framer Motion', 'Google OAuth', 'REST API'],
         links: [
             { label: 'Front', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Comnuoy_System' },
-            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend' },
-            { label: 'Community Aid', icon: 'fas fa-hand-holding-heart', isBadge: true }
+            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/VC1---Backend' },
+            { label: 'VC1 Platform', icon: 'fas fa-hand-holding-heart', isBadge: true }
+        ]
+    },
+    {
+        id: 'ecommerce',
+        category: 'fullstack',
+        title: {
+            en: 'Full-Stack E-Commerce Platform',
+            kh: 'វេទិកាពាណិជ្ជកម្មអេឡិចត្រូនិច (E-Commerce)'
+        },
+        desc: {
+            en: 'A modern e-commerce web platform featuring product catalog browsing, instant search, shopping cart management, checkout with order tracking, user wishlists, and customer reviews. Built with Vue 3, TypeScript, Pinia state management, and a Laravel Sanctum RESTful API backend.',
+            kh: 'កម្មវិធីគេហទំព័រពាណិជ្ជកម្មអេឡិចត្រូនិចទំនើប ដែលមានមុខងារស្វែងរកទំនិញ កន្ត្រកទំនិញ ការបញ្ជាទិញ និងតាមដានការដឹកជញ្ជូន បញ្ជីទំនិញពេញចិត្ត (Wishlist) និងការវាយតម្លៃពីអតិថិជន។ បង្កើតឡើងដោយ Vue 3, TypeScript, Pinia និង Laravel Sanctum RESTful API backend។'
+        },
+        placeholderIcon: 'fas fa-shopping-cart',
+        placeholderBadge: 'Full Stack E-Commerce',
+        tech: ['Vue 3', 'TypeScript', 'Pinia', 'TailwindCSS', 'Vite', 'Laravel', 'Sanctum', 'MySQL'],
+        links: [
+            { label: 'Front', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Frontend_E' },
+            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend_E' },
+            { label: 'E-Commerce', icon: 'fas fa-store', isBadge: true }
         ]
     },
     {
@@ -66,14 +86,15 @@ const PROJECTS_DATA = [
             kh: 'REST API ប្រព័ន្ធបរិច្ចាគ និងទូទាត់ (Chomnuoy)'
         },
         desc: {
-            en: 'Robust RESTful backend for community fundraising built with Laravel 12 and MySQL. Features NBC Bakong KHQR dynamic payment generation & verification, ABA PayWay checkout, real-time Server-Sent Events (SSE) notification streaming, Google OAuth with Socialite, and Docker containerization.',
-            kh: 'ប្រព័ន្ធ Backend REST API ដ៏រឹងមាំសម្រាប់វេទិកា Chomnuoy បង្កើតឡើងដោយ Laravel 12 និង MySQL។ រួមបញ្ចូលការទូទាត់ប្រាក់តាម NBC Bakong KHQR, ប្រតិបត្តិការ ABA PayWay, ការបញ្ជូនដំណឹងតាម Server-Sent Events (SSE) ភ្លាមៗ, Google OAuth ជាមួយ Socialite និង Docker containerization។'
+            en: 'Virtual Company (VC1) backend. Robust RESTful backend for community fundraising built with Laravel 12 and MySQL. Features NBC Bakong KHQR dynamic payment generation & verification, ABA PayWay checkout, real-time Server-Sent Events (SSE) notification streaming, Google OAuth with Socialite, and Docker containerization.',
+            kh: 'គម្រោង Virtual Company (VC1) Backend។ ប្រព័ន្ធ Backend REST API ដ៏រឹងមាំសម្រាប់វេទិកា Chomnuoy បង្កើតឡើងដោយ Laravel 12 និង MySQL។ រួមបញ្ចូលការទូទាត់ប្រាក់តាម NBC Bakong KHQR, ប្រតិបត្តិការ ABA PayWay, ការបញ្ជូនដំណឹងតាម Server-Sent Events (SSE) ភ្លាមៗ, Google OAuth ជាមួយ Socialite និង Docker containerization។'
         },
         tech: ['Laravel 12', 'PHP 8.2+', 'MySQL', 'Bakong KHQR', 'ABA PayWay', 'Sanctum', 'SSE', 'Docker'],
         placeholderIcon: 'fas fa-coins',
         placeholderBadge: 'Laravel REST API',
         links: [
-            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend' },
+            { label: 'VC1 Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/VC1---Backend' },
+            { label: 'Alt Repo', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend' },
             { label: 'Bakong KHQR', icon: 'fas fa-qrcode', isBadge: true }
         ]
     },
@@ -94,6 +115,25 @@ const PROJECTS_DATA = [
         links: [
             { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/library_management_system_backend' },
             { label: 'Clean Architecture', icon: 'fas fa-code', isBadge: true }
+        ]
+    },
+    {
+        id: 'mongodb-api',
+        category: 'backend',
+        title: {
+            en: 'Product Catalog REST API with MongoDB',
+            kh: 'REST API គ្រប់គ្រងទំនិញជាមួយ MongoDB'
+        },
+        desc: {
+            en: 'PNC Group project (G5). Developed a high-performance RESTful API using Node.js, Express 5, and TypeScript connected to MongoDB with Mongoose ODM. Implemented clean Controller-Service architecture for product catalog operations, pricing calculations, stock control, and multi-image schemas.',
+            kh: 'គម្រោងក្រុម PNC (G5)។ បង្កើត RESTful API ប្រកបដោយប្រសិទ្ធភាពខ្ពស់ដោយប្រើ Node.js, Express 5 និង TypeScript ភ្ជាប់ទៅ MongoDB តាមរយៈ Mongoose ODM។ អនុវត្តស្ថាបត្យកម្ម Controller-Service សម្រាប់ការគ្រប់គ្រងទំនិញ ការគណនាតម្លៃទំនិញបញ្ចុះតម្លៃ ការគ្រប់គ្រងស្តុក និងរូបភាពទំនិញ។'
+        },
+        tech: ['Node.js', 'Express 5', 'TypeScript', 'MongoDB', 'Mongoose', 'REST API'],
+        placeholderIcon: 'fas fa-database',
+        placeholderBadge: 'MongoDB & Express 5',
+        links: [
+            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/lysarl-24/G5-Node-Mongodb' },
+            { label: 'PNC Group 5', icon: 'fas fa-users', isBadge: true }
         ]
     },
     {
