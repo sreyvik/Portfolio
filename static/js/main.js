@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projectCards.forEach(card => {
                 const category = card.getAttribute('data-category');
 
-                if (filter === 'all' || category === filter) {
+                if (filter === 'all' || category === filter || (category && category.split(' ').includes(filter))) {
                     card.classList.remove('hide');
                     visibleCount++;
                     

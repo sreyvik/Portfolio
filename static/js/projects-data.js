@@ -40,22 +40,22 @@ const PROJECTS_DATA = [
         ]
     },
     {
-        id: 'comnuoy-system',
-        category: 'fullstack',
+        id: 'chomnuoy-system',
+        category: 'fullstack backend',
         title: {
-            en: 'Comnuoy Community Aid & Donation System',
-            kh: 'ប្រព័ន្ធជំនួយសហគមន៍ (Comnuoy System)'
+            en: 'Chomnuoy Donation & Payment REST API',
+            kh: 'ប្រព័ន្ធជំនួយសហគមន៍ និងទូទាត់ប្រាក់ (Chomnuoy REST API)'
         },
         desc: {
-            en: 'Virtual Company project (VC1). A full-stack community support & fundraising platform. Features campaign management, real-time donation tracking, interactive GPS material pickup with Leaflet maps, QR code verification, and secure Google OAuth & JWT authentication.',
-            kh: 'គម្រោង Virtual Company (VC1)។ វេទិកាជំនួយសហគមន៍ និងការរៃអង្គាសប្រាក់ Full-stack។ រួមបញ្ចូលការគ្រប់គ្រងយុទ្ធនាការ ការតាមដានការបរិច្ចាគ ការកំណត់ទីតាំងទទួលសម្ភារៈតាមផែនទី Leaflet & GPS ការផ្ទៀងផ្ទាត់ QR code និងប្រព័ន្ធសុវត្ថិភាព Google OAuth & JWT។'
+            en: 'Virtual Company project (VC1). A comprehensive community fundraising and material donation platform. Combines a React frontend featuring interactive GPS material pickup with Leaflet maps and QR verification, alongside a robust Laravel 12 backend integrating NBC Bakong KHQR dynamic payments, ABA PayWay checkout, real-time Server-Sent Events (SSE) notifications, Google OAuth, and Docker containerization.',
+            kh: 'គម្រោង Virtual Company (VC1)។ វេទិកាជំនួយសហគមន៍ ការរៃអង្គាសប្រាក់ និងបរិច្ចាគសម្ភារៈពេញលេញ។ រួមបញ្ចូលគ្នានូវ React frontend ដែលមានផែនទី Leaflet & GPS សម្រាប់កំណត់ទីតាំងទទួលសម្ភារៈ និងការផ្ទៀងផ្ទាត់ QR code ជាមួយ Laravel 12 backend ដ៏រឹងមាំ ដែលរួមមានការទូទាត់ប្រាក់តាម NBC Bakong KHQR, ប្រតិបត្តិការ ABA PayWay, ការបញ្ជូនដំណឹងតាម Server-Sent Events (SSE) ភ្លាមៗ, Google OAuth និង Docker containerization។'
         },
         image: 'static/images/comnuoy-system.jpg',
-        tech: ['React', 'Vite', 'TailwindCSS', 'Leaflet', 'Framer Motion', 'Google OAuth', 'REST API'],
+        tech: ['Laravel 12', 'React', 'MySQL', 'Bakong KHQR', 'Leaflet', 'TailwindCSS', 'SSE', 'Docker'],
         links: [
             { label: 'Front', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Comnuoy_System' },
             { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/VC1---Backend' },
-            { label: 'VC1 Platform', icon: 'fas fa-hand-holding-heart', isBadge: true }
+            { label: 'Bakong KHQR', icon: 'fas fa-qrcode', isBadge: true }
         ]
     },
     {
@@ -76,26 +76,6 @@ const PROJECTS_DATA = [
             { label: 'Front', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Frontend_E' },
             { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend_E' },
             { label: 'E-Commerce', icon: 'fas fa-store', isBadge: true }
-        ]
-    },
-    {
-        id: 'comnuoy-backend',
-        category: 'backend',
-        title: {
-            en: 'Chomnuoy Donation & Payment REST API',
-            kh: 'REST API ប្រព័ន្ធបរិច្ចាគ និងទូទាត់ (Chomnuoy)'
-        },
-        desc: {
-            en: 'Virtual Company (VC1) backend. Robust RESTful backend for community fundraising built with Laravel 12 and MySQL. Features NBC Bakong KHQR dynamic payment generation & verification, ABA PayWay checkout, real-time Server-Sent Events (SSE) notification streaming, Google OAuth with Socialite, and Docker containerization.',
-            kh: 'គម្រោង Virtual Company (VC1) Backend។ ប្រព័ន្ធ Backend REST API ដ៏រឹងមាំសម្រាប់វេទិកា Chomnuoy បង្កើតឡើងដោយ Laravel 12 និង MySQL។ រួមបញ្ចូលការទូទាត់ប្រាក់តាម NBC Bakong KHQR, ប្រតិបត្តិការ ABA PayWay, ការបញ្ជូនដំណឹងតាម Server-Sent Events (SSE) ភ្លាមៗ, Google OAuth ជាមួយ Socialite និង Docker containerization។'
-        },
-        tech: ['Laravel 12', 'PHP 8.2+', 'MySQL', 'Bakong KHQR', 'ABA PayWay', 'Sanctum', 'SSE', 'Docker'],
-        placeholderIcon: 'fas fa-coins',
-        placeholderBadge: 'Laravel REST API',
-        links: [
-            { label: 'VC1 Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/VC1---Backend' },
-            { label: 'Alt Repo', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend' },
-            { label: 'Bakong KHQR', icon: 'fas fa-qrcode', isBadge: true }
         ]
     },
     {
