@@ -51,9 +51,10 @@ const PROJECTS_DATA = [
             kh: 'បង្កើត RESTful APIs ដោយប្រើ Express.js និង TypeScript សម្រាប់គ្រប់គ្រងបណ្ណាល័យ។ ភ្ជាប់ទៅមូលដ្ឋានទិន្នន័យ MySQL, រៀបចំកូដជាមួយ Service, Repository និង Controller layers, អនុវត្ត JWT authentication និង bcrypt hashing និងសាកល្បងជាមួយ Postman។'
         },
         tech: ['Node.js', 'Express.js', 'TypeScript', 'MySQL', 'JWT', 'bcrypt', 'Postman'],
-        placeholderIcon: 'fas fa-book-reader',
-        placeholderBadge: 'Node.js Project',
+        placeholderIcon: 'fas fa-server',
+        placeholderBadge: 'Backend REST API',
         links: [
+            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/library_management_system_backend' },
             { label: 'Clean Architecture', icon: 'fas fa-code', isBadge: true }
         ]
     },
