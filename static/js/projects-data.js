@@ -14,9 +14,8 @@ const PROJECTS_DATA = [
             en: 'Full-stack developer intern project at SomneangPleng Music School (4 Months). Developed user interfaces for student score management using Flutter and Nuxt.js, built features for student, teacher, and administrator workflows, and integrated with NestJS backend APIs.',
             kh: 'គម្រោងកម្មសិក្សា Full-stack នៅសាលាតន្ត្រី SomneangPleng (៤ ខែ)។ បង្កើត UI សម្រាប់គ្រប់គ្រងពិន្ទុសិស្សដោយប្រើ Flutter និង Nuxt.js, បង្កើតមុខងារសម្រាប់សិស្ស គ្រូ និងអ្នកគ្រប់គ្រង និងរួមបញ្ចូលជាមួយ NestJS backend APIs។'
         },
+        image: 'static/images/schoolmanagementsystem.jpg',
         tech: ['Flutter', 'Nuxt.js', 'NestJS', 'REST API', 'GitHub'],
-        placeholderIcon: 'fas fa-graduation-cap',
-        placeholderBadge: 'Internship Project',
         links: [
             { label: 'SomneangPleng Music School', icon: 'fas fa-briefcase', isBadge: true }
         ]
