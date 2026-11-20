@@ -40,6 +40,24 @@ const PROJECTS_DATA = [
         ]
     },
     {
+        id: 'comnuoy-system',
+        category: 'fullstack',
+        title: {
+            en: 'Comnuoy Community Aid & Donation System',
+            kh: 'ប្រព័ន្ធជំនួយសហគមន៍ (Comnuoy System)'
+        },
+        desc: {
+            en: 'A full-stack community support & fundraising platform. Features campaign management, real-time donation tracking, interactive GPS material pickup with Leaflet maps, QR code verification, and secure Google OAuth & JWT authentication.',
+            kh: 'វេទិកាជំនួយសហគមន៍ និងការរៃអង្គាសប្រាក់ Full-stack។ រួមបញ្ចូលការគ្រប់គ្រងយុទ្ធនាការ ការតាមដានការបរិច្ចាគ ការកំណត់ទីតាំងទទួលសម្ភារៈតាមផែនទី Leaflet & GPS ការផ្ទៀងផ្ទាត់ QR code និងប្រព័ន្ធសុវត្ថិភាព Google OAuth & JWT។'
+        },
+        image: 'static/images/comnuoy-system.jpg',
+        tech: ['React', 'Vite', 'TailwindCSS', 'Leaflet', 'Framer Motion', 'Google OAuth', 'REST API'],
+        links: [
+            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Comnuoy_System' },
+            { label: 'Community Aid', icon: 'fas fa-hand-holding-heart', isBadge: true }
+        ]
+    },
+    {
         id: 'library-api',
         category: 'backend',
         title: {
