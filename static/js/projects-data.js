@@ -53,8 +53,28 @@ const PROJECTS_DATA = [
         image: 'static/images/comnuoy-system.jpg',
         tech: ['React', 'Vite', 'TailwindCSS', 'Leaflet', 'Framer Motion', 'Google OAuth', 'REST API'],
         links: [
-            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Comnuoy_System' },
+            { label: 'Front', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Comnuoy_System' },
+            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend' },
             { label: 'Community Aid', icon: 'fas fa-hand-holding-heart', isBadge: true }
+        ]
+    },
+    {
+        id: 'comnuoy-backend',
+        category: 'backend',
+        title: {
+            en: 'Chomnuoy Donation & Payment REST API',
+            kh: 'REST API ប្រព័ន្ធបរិច្ចាគ និងទូទាត់ (Chomnuoy)'
+        },
+        desc: {
+            en: 'Robust RESTful backend for community fundraising built with Laravel 12 and MySQL. Features NBC Bakong KHQR dynamic payment generation & verification, ABA PayWay checkout, real-time Server-Sent Events (SSE) notification streaming, Google OAuth with Socialite, and Docker containerization.',
+            kh: 'ប្រព័ន្ធ Backend REST API ដ៏រឹងមាំសម្រាប់វេទិកា Chomnuoy បង្កើតឡើងដោយ Laravel 12 និង MySQL។ រួមបញ្ចូលការទូទាត់ប្រាក់តាម NBC Bakong KHQR, ប្រតិបត្តិការ ABA PayWay, ការបញ្ជូនដំណឹងតាម Server-Sent Events (SSE) ភ្លាមៗ, Google OAuth ជាមួយ Socialite និង Docker containerization។'
+        },
+        tech: ['Laravel 12', 'PHP 8.2+', 'MySQL', 'Bakong KHQR', 'ABA PayWay', 'Sanctum', 'SSE', 'Docker'],
+        placeholderIcon: 'fas fa-coins',
+        placeholderBadge: 'Laravel REST API',
+        links: [
+            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend' },
+            { label: 'Bakong KHQR', icon: 'fas fa-qrcode', isBadge: true }
         ]
     },
     {
