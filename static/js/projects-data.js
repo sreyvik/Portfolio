@@ -11,8 +11,8 @@ const PROJECTS_DATA = [
             kh: 'ប្រព័ន្ធគ្រប់គ្រងសាលា'
         },
         desc: {
-            en: 'Full-stack developer intern project at SomneangPleng Music School (4 Months). Developed user interfaces for student score management using Flutter and Nuxt.js, built features for student, teacher, and administrator workflows, and integrated with NestJS backend APIs.',
-            kh: 'គម្រោងកម្មសិក្សា Full-stack នៅសាលាតន្ត្រី SomneangPleng (៤ ខែ)។ បង្កើត UI សម្រាប់គ្រប់គ្រងពិន្ទុសិស្សដោយប្រើ Flutter និង Nuxt.js, បង្កើតមុខងារសម្រាប់សិស្ស គ្រូ និងអ្នកគ្រប់គ្រង និងរួមបញ្ចូលជាមួយ NestJS backend APIs។'
+            en: 'Full-stack internship project at SomneangPleng Music School. Built score management UIs with Flutter and Nuxt.js for student, teacher, and admin workflows, integrated with NestJS REST APIs.',
+            kh: 'គម្រោងកម្មសិក្សា Full-stack នៅសាលាតន្ត្រី SomneangPleng។ បង្កើត UI គ្រប់គ្រងពិន្ទុដោយប្រើ Flutter និង Nuxt.js សម្រាប់សិស្ស គ្រូ និងរដ្ឋបាល រួមបញ្ចូលជាមួយ NestJS REST APIs។'
         },
         image: 'static/images/schoolmanagementsystem.jpg',
         tech: ['Flutter', 'Nuxt.js', 'NestJS', 'REST API', 'GitHub'],
@@ -28,8 +28,8 @@ const PROJECTS_DATA = [
             kh: 'ប្រព័ន្ធគ្រប់គ្រងពិន្ទុសិស្ស'
         },
         desc: {
-            en: 'Virtual Company project (VC2). Collaborated on a Laravel backend for student score management. Worked with database-driven features, REST API integration, and supported role-based access control (RBAC) for administrators, teachers, and students.',
-            kh: 'គម្រោង Virtual Company (VC2)។ សហការលើ Laravel backend សម្រាប់គ្រប់គ្រងពិន្ទុសិស្ស។ ធ្វើការជាមួយមុខងារផ្អែកលើមូលដ្ឋានទិន្នន័យ, REST API integration និងគាំទ្រការគ្រប់គ្រងសិទ្ធិតាមតួនាទី (RBAC) សម្រាប់អ្នកគ្រប់គ្រង គ្រូ និងសិស្ស។'
+            en: 'Virtual Company project (VC2). Developed a database-driven Laravel backend for student score management, featuring role-based access control (RBAC) and RESTful API integration.',
+            kh: 'គម្រោង Virtual Company (VC2)។ អភិវឌ្ឍ Laravel backend សម្រាប់គ្រប់គ្រងពិន្ទុសិស្ស រួមមានការគ្រប់គ្រងសិទ្ធិតាមតួនាទី (RBAC) និងការភ្ជាប់ RESTful API។'
         },
         image: 'static/images/studentscoremanagementsystem.jpg',
         tech: ['Laravel', 'Vue.js', 'TypeScript', 'MySQL', 'REST API', 'RBAC'],
@@ -47,15 +47,14 @@ const PROJECTS_DATA = [
             kh: 'ប្រព័ន្ធជំនួយសហគមន៍ និងទូទាត់ប្រាក់ (Chomnuoy REST API)'
         },
         desc: {
-            en: 'Virtual Company project (VC1). A comprehensive community fundraising and material donation platform. Combines a React frontend featuring interactive GPS material pickup with Leaflet maps and QR verification, alongside a robust Laravel 12 backend integrating NBC Bakong KHQR dynamic payments, ABA PayWay checkout, real-time Server-Sent Events (SSE) notifications, Google OAuth, and Docker containerization.',
-            kh: 'គម្រោង Virtual Company (VC1)។ វេទិកាជំនួយសហគមន៍ ការរៃអង្គាសប្រាក់ និងបរិច្ចាគសម្ភារៈពេញលេញ។ រួមបញ្ចូលគ្នានូវ React frontend ដែលមានផែនទី Leaflet & GPS សម្រាប់កំណត់ទីតាំងទទួលសម្ភារៈ និងការផ្ទៀងផ្ទាត់ QR code ជាមួយ Laravel 12 backend ដ៏រឹងមាំ ដែលរួមមានការទូទាត់ប្រាក់តាម NBC Bakong KHQR, ប្រតិបត្តិការ ABA PayWay, ការបញ្ជូនដំណឹងតាម Server-Sent Events (SSE) ភ្លាមៗ, Google OAuth និង Docker containerization។'
+            en: 'Virtual Company project (VC1). Community aid & donation platform featuring Leaflet GPS material pickups, NBC Bakong KHQR dynamic payments, and real-time SSE notifications.',
+            kh: 'គម្រោង Virtual Company (VC1)។ វេទិកាជំនួយសហគមន៍ រួមបញ្ចូលការកំណត់ទីតាំងទទួលសម្ភារៈតាម Leaflet GPS ការទូទាត់ប្រាក់តាម NBC Bakong KHQR និងការបញ្ជូនដំណឹងតាម SSE។'
         },
         image: 'static/images/comnuoy-system.jpg',
-        tech: ['Laravel 12', 'React', 'MySQL', 'Bakong KHQR', 'Leaflet', 'TailwindCSS', 'SSE', 'Docker'],
+        tech: ['Laravel 12', 'React', 'MySQL', 'Bakong KHQR', 'Leaflet', 'SSE'],
         links: [
             { label: 'Front', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Comnuoy_System' },
-            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/VC1---Backend' },
-            { label: 'Bakong KHQR', icon: 'fas fa-qrcode', isBadge: true }
+            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/VC1---Backend' }
         ]
     },
     {
@@ -66,16 +65,15 @@ const PROJECTS_DATA = [
             kh: 'វេទិកាពាណិជ្ជកម្មអេឡិចត្រូនិច (E-Commerce)'
         },
         desc: {
-            en: 'A modern e-commerce web platform featuring product catalog browsing, instant search, shopping cart management, checkout with order tracking, user wishlists, and customer reviews. Built with Vue 3, TypeScript, Pinia state management, and a Laravel Sanctum RESTful API backend.',
-            kh: 'កម្មវិធីគេហទំព័រពាណិជ្ជកម្មអេឡិចត្រូនិចទំនើប ដែលមានមុខងារស្វែងរកទំនិញ កន្ត្រកទំនិញ ការបញ្ជាទិញ និងតាមដានការដឹកជញ្ជូន បញ្ជីទំនិញពេញចិត្ត (Wishlist) និងការវាយតម្លៃពីអតិថិជន។ បង្កើតឡើងដោយ Vue 3, TypeScript, Pinia និង Laravel Sanctum RESTful API backend។'
+            en: 'Full-stack e-commerce web platform featuring live search, shopping cart, checkout order tracking, and wishlists built with Vue 3, Pinia, and a Laravel Sanctum REST API.',
+            kh: 'វេទិកាពាណិជ្ជកម្មអេឡិចត្រូនិច Full-stack មានមុខងារស្វែងរកទំនិញ កន្ត្រកទំនិញ ការបញ្ជាទិញ និង Wishlist បង្កើតដោយ Vue 3, Pinia និង Laravel Sanctum REST API។'
         },
         placeholderIcon: 'fas fa-shopping-cart',
         placeholderBadge: 'Full Stack E-Commerce',
-        tech: ['Vue 3', 'TypeScript', 'Pinia', 'TailwindCSS', 'Vite', 'Laravel', 'Sanctum', 'MySQL'],
+        tech: ['Vue 3', 'TypeScript', 'Pinia', 'TailwindCSS', 'Laravel', 'MySQL'],
         links: [
             { label: 'Front', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Frontend_E' },
-            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend_E' },
-            { label: 'E-Commerce', icon: 'fas fa-store', isBadge: true }
+            { label: 'Back', icon: 'fab fa-github', url: 'https://github.com/sreyvik/Backend_E' }
         ]
     },
     {
@@ -86,15 +84,14 @@ const PROJECTS_DATA = [
             kh: 'REST API គ្រប់គ្រងបណ្ណាល័យ'
         },
         desc: {
-            en: 'Developed RESTful APIs using Express.js and TypeScript for library management. Connected to MySQL database, organized code with Service, Repository, and Controller layers, implemented JWT authentication and bcrypt password hashing, and tested endpoints with Postman.',
-            kh: 'បង្កើត RESTful APIs ដោយប្រើ Express.js និង TypeScript សម្រាប់គ្រប់គ្រងបណ្ណាល័យ។ ភ្ជាប់ទៅមូលដ្ឋានទិន្នន័យ MySQL, រៀបចំកូដជាមួយ Service, Repository និង Controller layers, អនុវត្ត JWT authentication និង bcrypt hashing និងសាកល្បងជាមួយ Postman។'
+            en: 'RESTful backend API for library management built with Express.js, TypeScript, and MySQL. Features layered Service-Repository architecture, JWT auth, and bcrypt hashing.',
+            kh: 'RESTful backend API សម្រាប់គ្រប់គ្រងបណ្ណាល័យ បង្កើតដោយ Express.js, TypeScript និង MySQL រៀបចំតាម Service-Repository architecture, JWT auth និង bcrypt hashing។'
         },
-        tech: ['Node.js', 'Express.js', 'TypeScript', 'MySQL', 'JWT', 'bcrypt', 'Postman'],
+        tech: ['Node.js', 'Express.js', 'TypeScript', 'MySQL', 'JWT', 'Postman'],
         placeholderIcon: 'fas fa-server',
         placeholderBadge: 'Backend REST API',
         links: [
-            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/library_management_system_backend' },
-            { label: 'Clean Architecture', icon: 'fas fa-code', isBadge: true }
+            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/sreyvik/library_management_system_backend' }
         ]
     },
     {
@@ -105,15 +102,14 @@ const PROJECTS_DATA = [
             kh: 'REST API គ្រប់គ្រងទំនិញជាមួយ MongoDB'
         },
         desc: {
-            en: 'PNC Group project (G5). Developed a high-performance RESTful API using Node.js, Express 5, and TypeScript connected to MongoDB with Mongoose ODM. Implemented clean Controller-Service architecture for product catalog operations, pricing calculations, stock control, and multi-image schemas.',
-            kh: 'គម្រោងក្រុម PNC (G5)។ បង្កើត RESTful API ប្រកបដោយប្រសិទ្ធភាពខ្ពស់ដោយប្រើ Node.js, Express 5 និង TypeScript ភ្ជាប់ទៅ MongoDB តាមរយៈ Mongoose ODM។ អនុវត្តស្ថាបត្យកម្ម Controller-Service សម្រាប់ការគ្រប់គ្រងទំនិញ ការគណនាតម្លៃទំនិញបញ្ចុះតម្លៃ ការគ្រប់គ្រងស្តុក និងរូបភាពទំនិញ។'
+            en: 'PNC Group project (G5). High-performance RESTful API using Node.js, Express 5, and MongoDB with Mongoose ODM. Implemented Controller-Service architecture for catalog & stock control.',
+            kh: 'គម្រោងក្រុម PNC (G5)។ RESTful API ប្រសិទ្ធភាពខ្ពស់ដោយប្រើ Node.js, Express 5 និង MongoDB តាមរយៈ Mongoose ODM ជាមួយស្ថាបត្យកម្ម Controller-Service គ្រប់គ្រងទំនិញ និងស្តុក។'
         },
         tech: ['Node.js', 'Express 5', 'TypeScript', 'MongoDB', 'Mongoose', 'REST API'],
         placeholderIcon: 'fas fa-database',
         placeholderBadge: 'MongoDB & Express 5',
         links: [
-            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/lysarl-24/G5-Node-Mongodb' },
-            { label: 'PNC Group 5', icon: 'fas fa-users', isBadge: true }
+            { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/lysarl-24/G5-Node-Mongodb' }
         ]
     },
     {
@@ -124,11 +120,11 @@ const PROJECTS_DATA = [
             kh: 'កម្មវិធីដឹកជញ្ជូន'
         },
         desc: {
-            en: 'A responsive transportation web platform that allows users to book cars online while giving administrators inventory tracking and sales strategy insights.',
-            kh: 'គេហទំព័រដឹកជញ្ជូនដែលអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ជិះឡាន និងអ្នកគ្រប់គ្រងអាចដឹងពីយុទ្ធសាស្រ្តលក់រថយន្ត។'
+            en: 'Responsive transportation web platform allowing users to book cars online while providing administrators with vehicle inventory tracking and sales insights.',
+            kh: 'គេហទំព័រដឹកជញ្ជូនដែលអនុញ្ញាតឱ្យអ្នកប្រើប្រាស់កក់រថយន្ត និងអ្នកគ្រប់គ្រងអាចតាមដានស្តុករថយន្ត និងយុទ្ធសាស្រ្តលក់។'
         },
         image: 'static/images/transport-car.png',
-        tech: ['HTML', 'CSS', 'JavaScript'],
+        tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
         links: [
             { label: 'Code', icon: 'fab fa-github', url: 'https://github.com/CHANthy-thy/Transport-car' },
             { label: 'Demo', icon: 'fas fa-external-link-alt', url: 'https://transport-brandcar.vercel.app/login.html', isAccent: true }

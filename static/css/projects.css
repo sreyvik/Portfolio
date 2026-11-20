@@ -64,6 +64,7 @@
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .project-card.hide {
@@ -158,16 +159,19 @@
 }
 
 .project-title {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
     font-weight: 700;
     color: var(--heading-color);
+    min-height: 3.2rem;
+    display: flex;
+    align-items: center;
 }
 
 .project-desc {
     color: var(--text-light);
-    font-size: 0.94rem;
-    margin-bottom: 22px;
+    font-size: 0.92rem;
+    margin-bottom: 20px;
     flex-grow: 1;
     line-height: 1.6;
 }
@@ -177,6 +181,8 @@
     flex-wrap: wrap;
     gap: 7px;
     margin-bottom: 20px;
+    min-height: 64px;
+    align-content: flex-start;
 }
 
 .project-tech span {
@@ -193,4 +199,6 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin-top: auto;
+    align-items: center;
 }
